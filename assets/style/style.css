@@ -557,6 +557,7 @@ body {
 
 .lowerHeader {
   display: flex;
+  flex-direction: row;
   background-color: var(--deepocean);
   height: 40px;
   margin-bottom: 50px;
@@ -1337,21 +1338,7 @@ a.footer-link:is(:hover, :focus) {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /**
-     * SPECIAL
-     */
-
-  .special-banner {
-    min-width: calc(25% - 25px);
-  }
-
-  .special-product .has-scrollbar > li {
-    min-width: calc(33.33% - 16.66px);
-  }
-
-  .special-banner .banner-title {
-    --fs-4: 2.4rem;
-  }
+}
 
   /**
      * SERVICE
@@ -1361,30 +1348,22 @@ a.footer-link:is(:hover, :focus) {
     width: 275px;
   }
 
-  .service-card .card-icon {
+   .card-icon {
     min-width: 70px;
     height: 70px;
   }
 
-  .service-card .card-title {
+.card-title {
     --fs-6: 2rem;
   }
 
-  /**
-     * INSTA POST
-     */
-
-  .insta-post {
-    padding-block-end: 0;
+  .service-card{
+    min-width: 70px;
+    height: 70px;
+    --fs-6: 2rem;
   }
 
-  .insta-post-list .insta-post-item {
-    min-width: 12.5%;
-  }
 
-  .insta-post-list {
-    padding-bottom: 0;
-  }
 
   /**
      * FOOTER
@@ -1394,4 +1373,4 @@ a.footer-link:is(:hover, :focus) {
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     gap: 50px;
   }
-}
+
