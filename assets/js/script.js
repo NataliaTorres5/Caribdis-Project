@@ -23,7 +23,7 @@ for (let i = 0; i < navElems.length; i++) {
 
 
 /**
- * header & go top btn active on page scroll
+ * header & go top btn 
  */
 
 const header = document.querySelector("[data-header]");
