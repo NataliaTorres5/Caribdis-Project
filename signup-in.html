@@ -36,7 +36,7 @@
   
         <div class="overlay" data-overlay></div>
   
-        <a href="#" class="logo">
+        <a href="./index.html" class="logo">
           <img src="./assets/img/CaribdisLogo.png" width="200" height="200" alt="Caribdislogo">
         </a>
   
@@ -50,14 +50,14 @@
             <ion-icon name="close-outline"></ion-icon>
           </button>
   
-          <a href="#" class="logo">
+          <a href="./index.html" class="logo">
             <img src="./assets/img/CaribdisLogo.png" width="190" height="190" alt="Footcap logo">
           </a>
   
           <ul class="navbar-list">
   
             <li class="navbar-item">
-              <a href="#" class="navbar-link">Inicio</a>
+              <a href="./index.html" class="navbar-link">Inicio</a>
             </li>
   
             <li class="navbar-item">
@@ -81,7 +81,7 @@
             </li>
   
             <li>
-              <a href="#" class="nav-action-btn">
+              <a href="./signup-in.html" class="nav-action-btn">
                 <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
   
                 <span class="nav-action-text">Ingreso / Registro</span>
@@ -121,11 +121,11 @@
                 </li>
       
                 <li class="navbar-item header2">
-                  <a href="#" class="navbar-link">Animales</a>
+                  <a href="./animales.html" class="navbar-link">Animales</a>
                 </li>
       
                 <li class="navbar-item header2">
-                  <a href="#" class="navbar-link">Tienda</a>
+                  <a href="./productos.html" class="navbar-link">Tienda</a>
                 </li>
               </ol>
   
@@ -134,7 +134,48 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+
+      <div class="signup-signin">
+
+      <div class="box right-panel-active">
+        <!-- Sign Up -->
+        <div class="box__form box--signup">
+          <form action="#" class="form-sign" id="form1">
+            <h2 class="form__title">Registrate</h2>
+            <input type="text" placeholder="Usuario" class="input-box" />
+            <input type="email" placeholder="Email" class="input-box" />
+            <input type="password" placeholder="Contraseña" class="input-box" />
+            <button class="btn">Registrate</button>
+          </form>
+        </div>
+      
+        <!-- Sign In -->
+        <div class="box__form box--signin">
+          <form action="#" class="form-sign" id="form2">
+            <h2 class="form__title">Ingresa</h2>
+            <input type="email" placeholder="Email" class="input-box" />
+            <input type="password" placeholder="Contraseña" class="input-box" />
+            <a href="#" class="link">Olvidaste tu contraseña?</a>
+            <button class="btn">Ingresa</button>
+          </form>
+        </div>
+      
+        <!-- Overlay -->
+        <div class="box__over">
+          <div class="over">
+            <div class="over__panel over--left">
+              <button class="btn" id="signIn">Ingresa</button>
+            </div>
+            <div class="over__panel over--right">
+              <button class="btn" id="signUp">Registrate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+    </main>
      <!-- 
     - #FOOTER
   -->
@@ -352,6 +393,7 @@
   <!-- 
     - custom js link
   -->
+  <script src="./assets/js/signUp-signIn.js"></script>
   <script src="./assets/js/script.js"></script>
 
   <!-- 
